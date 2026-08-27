@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>News Update</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="header-inner">
+      <h1>News Update</h1>
+      <p class="tagline">Pick your topics, get the latest headlines.</p>
+    </div>
+  </header>
+
+  <main class="app-main">
+    <section class="topic-bar" aria-label="Topic selection">
+      <div id="topic-list" class="topic-list"></div>
+      <div class="topic-actions">
+        <button id="select-all" class="link-btn" type="button">Select all</button>
+        <button id="select-none" class="link-btn" type="button">Clear</button>
+        <button id="refresh" class="primary-btn" type="button">Refresh</button>
+      </div>
+    </section>
+
+    <section id="feed" class="feed" aria-live="polite"></section>
+  </main>
+
+  <footer class="app-footer">
+    <p>Headlines sourced from Google News. Selections are saved on this device.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
